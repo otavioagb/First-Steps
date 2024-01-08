@@ -1,0 +1,6 @@
+nome=input('Qual o seu nome?')
+print(f'Olá, {nome}, bem vindo a mais uma aula!!')
+print(nome, end='')
+idade=int(input(', qual sua idade?'))
+print(nome, idade, 'anos.', end='')
+print(' Você nasceu em', 2023-idade)

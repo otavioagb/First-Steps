@@ -1,0 +1,7 @@
+nome=str(input('Digite seu nome:'))
+print('Seu nome em maiúsculo é:',nome.upper())
+print('Seu nome em minúsculo é:',nome.lower())
+print('Esse nome possui', (len(nome) - nome.count(' ')), 'caracteres.')
+nome1=nome.find(' ')
+print('O primeiro nome possui {} caracteres'.format(nome1))
+num=input('Digite um número entre 0 e 9999:')
