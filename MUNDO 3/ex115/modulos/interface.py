@@ -10,6 +10,3 @@ def menu(options):
         print(f'{opt}° Option - {option}')
         opt+=1
     print('='*40)
-
-
-        

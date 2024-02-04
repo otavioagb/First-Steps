@@ -1,6 +1,6 @@
 def find_file(txt):
     try:
-        a = open(txt, 'rt')
+        a = open(f'MUNDO 3/ex115/{txt}', 'rt')
         a.close()
     except (FileNotFoundError):
         return False
@@ -9,7 +9,7 @@ def find_file(txt):
     
 def create_file(file):
     try:
-        a = open(file, 'wt+')
+        a = open(f'MUNDO 3/ex115/{file}', 'wt+')
     except:
         print('Error creating file')
     else:    
