@@ -1,28 +1,32 @@
-#quantos total + 18
-#quntos homens total
-#quanta mulheres menos de 20
-
 sum_more18=sum_m=sum_yless20=0
 
 while True:
+
     print('='*23)
-    print('   REGISTER A PERSON')
+    print('REGISTER A PERSON'.center(23))
     print('='*23)
 
     age=int(input('Age: '))
+
     if age > 18:
         sum_more18+=1
-    sex=' '
-    while sex not in 'MW':
-        sex=input('Sex [M/W]: ').upper().strip()
-    if sex == 'M':
+
+    gendder=' '
+
+    while gendder not in 'MF':
+        gendder=input('[M/F]: ').upper().strip()
+
+    if gendder == 'M':
         sum_m+=1    
-    if sex == 'W' and age < 20:
+
+    elif gendder == 'F' and age < 20:
         sum_yless20+=1
 
     choice=' '
+
     while choice not in 'YN':
         choice=input('Continue? [Y/N] ').upper().strip()
+
     if choice == 'N':
         break
 

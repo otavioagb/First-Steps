@@ -1,4 +1,5 @@
-idade=int(input('Digite sua idade:'))
+idade=int(input('Digite sua idade: '))
+
 print('De acordo com a Confederação Nacional de Nataçao, ', end='')
 if idade <= 9:
     print('sua categoria é Mirin.')

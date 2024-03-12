@@ -1,8 +1,8 @@
 from time import sleep
+
 exit=False
-maior = 0
-menor = 0
-choice = 4
+maior=menor=0
+choice=4
 
 while not exit:
 
@@ -26,13 +26,14 @@ while not exit:
             n1=int(input('Digite um número: '))
             n2=int(input('Digite mais um: '))
 
-        print('''Digite o NÚMERO da função desejada:
-[1] Somar
+        print('='*30)
+        print("""[1] Somar
 [2] Multiplicar
 [3] Maior
 [4] Novos números
-[5] Sair do programa''')
-        choice=int(input(''))
+[5] Sair do programa""")
+        print('='*30)
+        choice=int(input('Digite o NÚMERO da função desejada: '))
     
     elif choice == 5:
         exit=True

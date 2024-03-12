@@ -1,10 +1,13 @@
 print('-'*24)
-print(' SEQUÊNCIA DE FIBONACCI')
+print('SEQUENCE DE FIBONACCI'.center(24))
 print('-'*24)
-num=int(input('How many terms do you wanna show? '))
+
+num=int(input('How many terms do you wanna display? '))
+
 t1=0
 t2=1
 cont=3
+
 print(f'{t1} -> {t2}', end='')
 while cont <= num:
     t3 = t2 + t1
@@ -12,4 +15,4 @@ while cont <= num:
     t1=t2
     t2=t3
     cont += 1
-print(' -> FIM')
+print(' -> END')

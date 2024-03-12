@@ -1,10 +1,12 @@
 from random import randint
+
 print('Jogaremos Pedra, Papel e Tesoura')
-print('=_' * 5 + '=')
+print('='*30)
 print('''[0] Pedra
 [1] Papel
 [2] Tesoura''')
-print('=_' * 5 + '=')
+print('='*30)
+
 escolha=int((input('Sua jogada: ')))
 tipo=('pedra','papel','tesoura')
 computador=randint(0,2)
