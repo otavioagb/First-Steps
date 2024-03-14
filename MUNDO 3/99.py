@@ -1,6 +1,7 @@
 from random import randint
 from time import sleep
 
+
 def biggest(t):
 
     print('='*25)
@@ -9,7 +10,9 @@ def biggest(t):
     biggest=0
 
     for x in range(0, t):
+        
         num=randint(0, 10)
+
         if x == 0:
             biggest=num
         else:

@@ -1,8 +1,9 @@
 import urllib.request
 
+
 try:
     site=urllib.request.urlopen('http://www.pudim.com.br')
 except:
-    print('Deu erro!')
+    print('There was an error!')
 else:
-    print('Tudo ok!')
+    print('All very well!')

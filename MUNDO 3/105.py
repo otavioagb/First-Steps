@@ -14,7 +14,7 @@ def grades(sit=False):
         if cont == 1:            
             biggest = grade
             lowest = grade
-
+            
         elif cont != 1:
             if grade >= biggest:
                 biggest = grade     
@@ -22,8 +22,10 @@ def grades(sit=False):
                 lowest = grade
 
         choice=str(input('Continue [Y/N]? ')).strip().upper()
+
         while choice not in 'YN':
             choice=str(input('Continue [Y/N]? ')).strip().upper()
+
         if choice == 'N':
             average=sum(grades)/cont
             data['Total']=cont
@@ -33,6 +35,7 @@ def grades(sit=False):
             break
 
     if sit:
+
         if average >= 7:
             sit='Good'
             data['Situation']= sit
@@ -44,7 +47,5 @@ def grades(sit=False):
             data['Situation']= sit
             
     return data
-
-
 
 print(grades())

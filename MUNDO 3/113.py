@@ -1,5 +1,7 @@
 def leiaint(x):
+        
         while True:
+
             try:
                 num=int(input(x))
             except:
@@ -9,7 +11,9 @@ def leiaint(x):
                 return num
             
 def leiafloat(x):
+
     while True:
+        
         try:
             num=float(input(x))
         except:
